@@ -1,11 +1,13 @@
 
+## Overview
 
-This is a project which loads characters from rick and morty api
+This is a project which loads characters from rick and morty api - [https://rickandmortyapi.com/api/](https://rickandmortyapi.com/api/)
 
-# Usage:
+## Usage
 
-From the command line:
-.gradlew app:assembleDebug
+1. From the command line: `.gradlew app:assembleDebug`
+2. See the apk in the `./build/outputs/apk/debug` folder
 
+## Technologies
 
-The apk is in the ./build/outputs/apk/debug folder
+Written using Kotlin, Room, RxJava, RxAndroid
