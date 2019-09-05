@@ -39,6 +39,8 @@ class RickAndMortyViewModel : ViewModel() {
         val executor = Executors.newSingleThreadExecutor()
         val scheduler = Schedulers.from(executor)
         val dataSourceFactory = characterRepository.getDataSourceFactory()
+
+        // I have to setup paging callback for that
         compositeDisposable?.add(RxPagedListBuilder(dataSourceFactory, config)
             .setFetchScheduler(scheduler)
             .setNotifyScheduler(scheduler)
