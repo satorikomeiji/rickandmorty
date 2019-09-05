@@ -9,7 +9,7 @@ import retrofit2.http.GET
 
 interface RickAndMortyApiService {
 
-    @GET("/")
+    @GET("character")
     fun getAll(): Observable<Result>
 
     /**
@@ -20,7 +20,7 @@ interface RickAndMortyApiService {
             val retrofit = Retrofit.Builder()
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .addConverterFactory(GsonConverterFactory.create())
-                .baseUrl("https://rickandmortyapi.com/api/character/")
+                .baseUrl("https://rickandmortyapi.com/api/")
                 .build()
 
             return retrofit.create(RickAndMortyApiService::class.java);
