@@ -9,7 +9,7 @@ import retrofit2.http.GET
 
 interface RickAndMortyApiService {
 
-    @GET
+    @GET("/")
     fun getAll(): Observable<Result>
 
     /**

@@ -1,6 +1,7 @@
 package com.ilya.RickAndMorty.repository
 
 import android.content.Context
+import androidx.paging.DataSource
 import io.reactivex.Completable
 import io.reactivex.schedulers.Schedulers
 
@@ -25,6 +26,10 @@ class CharacterRepository(private val context: Context) {
             .subscribeOn(Schedulers.io())
             .doOnNext { characterDao.insert(it.results)}
             .ignoreElements()
+    }
+
+    fun getDataSourceFactory() : DataSource.Factory<Int, CharacterEntity> {
+        return characterDao.observeAllPaged()
     }
 
 
