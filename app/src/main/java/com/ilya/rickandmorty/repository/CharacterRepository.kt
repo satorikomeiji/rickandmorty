@@ -1,4 +1,4 @@
-package com.ilya.RickAndMorty.repository
+package com.ilya.rickandmorty.repository
 
 import android.content.Context
 import androidx.paging.DataSource

@@ -1,4 +1,4 @@
-package com.ilya.RickAndMorty
+package com.ilya.rickandmorty
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4

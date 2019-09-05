@@ -1,4 +1,4 @@
-package com.ilya.RickAndMorty.repository
+package com.ilya.rickandmorty.repository
 
 data class Result(var info: Info, var results: List<CharacterEntity>)
 

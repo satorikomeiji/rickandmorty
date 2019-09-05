@@ -1,4 +1,4 @@
-package com.ilya.RickAndMorty.presentation
+package com.ilya.rickandmorty.presentation
 
 import android.view.LayoutInflater
 import android.view.View
@@ -9,8 +9,8 @@ import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.ilya.RickAndMorty.R
-import com.ilya.RickAndMorty.repository.CharacterEntity
+import com.ilya.rickandmorty.R
+import com.ilya.rickandmorty.repository.CharacterEntity
 
 class RickAndMortyAdapter() :
     PagedListAdapter<CharacterEntity, CharacterViewHolder>(diffCallback) {
@@ -22,7 +22,7 @@ class RickAndMortyAdapter() :
     override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
         val entity = getItem(position)
         Glide.with(holder.itemView.context).load(entity?.image ?: "").into(holder.characterImage)
-        holder.characterName.text = entity?.name ?: "The name is not available"
+        holder.characterName.text = entity?.name ?: holder.itemView.context.getString(R.string.character_no_name)
     }
 
 

@@ -1,11 +1,11 @@
-package com.ilya.RickAndMorty.presentation
+package com.ilya.rickandmorty.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.ilya.RickAndMorty.R
+import com.ilya.rickandmorty.R
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 

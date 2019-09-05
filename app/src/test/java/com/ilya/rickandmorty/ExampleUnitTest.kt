@@ -1,4 +1,4 @@
-package com.ilya.RickAndMorty
+package com.ilya.rickandmorty
 
 import org.junit.Test
 

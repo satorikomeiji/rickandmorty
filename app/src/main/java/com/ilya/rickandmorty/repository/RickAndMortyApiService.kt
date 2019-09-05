@@ -1,4 +1,4 @@
-package com.ilya.RickAndMorty.repository
+package com.ilya.rickandmorty.repository
 
 import io.reactivex.Observable
 import retrofit2.Retrofit

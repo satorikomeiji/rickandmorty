@@ -1,4 +1,4 @@
-package com.ilya.RickAndMorty.repository
+package com.ilya.rickandmorty.repository
 
 import androidx.room.Database
 import androidx.room.RoomDatabase

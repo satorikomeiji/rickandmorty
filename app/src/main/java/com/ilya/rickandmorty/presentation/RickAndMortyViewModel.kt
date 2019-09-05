@@ -1,11 +1,11 @@
-package com.ilya.RickAndMorty.presentation
+package com.ilya.rickandmorty.presentation
 
 import androidx.lifecycle.ViewModel
 import androidx.paging.PagedList
 import androidx.paging.RxPagedListBuilder
-import com.ilya.RickAndMorty.App
-import com.ilya.RickAndMorty.repository.CharacterEntity
-import com.ilya.RickAndMorty.repository.CharacterRepository
+import com.ilya.rickandmorty.App
+import com.ilya.rickandmorty.repository.CharacterEntity
+import com.ilya.rickandmorty.repository.CharacterRepository
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers

@@ -1,4 +1,4 @@
-package com.ilya.RickAndMorty
+package com.ilya.rickandmorty
 
 import android.app.Application
 
